@@ -1,3 +1,5 @@
+package First_Task;
+
 import java.util.Random;
 
 public class Feline implements CatInfo, TigerInfo {

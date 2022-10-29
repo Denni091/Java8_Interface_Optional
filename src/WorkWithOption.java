@@ -1,24 +1,15 @@
 import java.util.Optional;
 
-public class Helper {
+public class WorkWithOption {
+    public Optional<String> workWithOptional(String string) {
+        Optional<String> optionalForString = Optional.ofNullable(string);
+        String email = "qwerty@gmail.com";
 
-
-    public static void workWithOptional(String string) {
-
-//        Optional<String> optional = Optional.ofNullable(string);
-////        Optional optional = Optional.ofNullable(string);
-//        if (string == null) {
-//
-//        }
-//        if (string.equals("email")) {
-//            Optional.of(string);
-//        }
-//        return optional;
-
-        if (string.equals("email")){
-            System.out.println("empty");
-        } else {
-            System.out.println("not empty");
+        if (string == null){
+            System.out.println(optionalForString.get());
+        } else if (string.equals(email)){
+            System.out.println(optionalForString.get());
         }
+        return Optional.of(string);
     }
 }

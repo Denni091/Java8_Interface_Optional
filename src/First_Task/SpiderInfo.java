@@ -1,3 +1,5 @@
+package First_Task;
+
 public interface SpiderInfo {
 
     default void animalInfo() {
